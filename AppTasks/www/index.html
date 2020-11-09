@@ -7,7 +7,7 @@
   <meta name="description" content="APP">
   <meta name="keywords" content="Tasks">
   <meta name="author" content="Luiz Gustavo Piovezani">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
@@ -60,6 +60,17 @@
 <script src="js/embaralhar-itens.js"></script>
 <script src="js/jquerytouchswipe.js"></script>
 <script>
+
+
+$(".Btnlogin").on("click",function(){
+    return verificarCadastro();
+});
+
+function verificarCadastro(){
+    $(".telaLogin").hide();
+    $(".telaTarefas").show();
+    return false;
+}
 </script>
 </body>
 </html>
