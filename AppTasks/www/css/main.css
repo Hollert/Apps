@@ -1,0 +1,144 @@
+@font-face {
+    font-family: futura;
+    src: url(../fonts/LTe50152.woff);
+}
+
+/* Responsividade em fontes */
+html { font-size: calc(1em + 1vw); }
+
+/*||||||||||||||BODY|||||||||||||||*/
+
+body{
+	background: linear-gradient(to right, rgba(214,131,222,1) 0%, rgba(112,190,214,1) 100%);
+	font-family: futura;
+	text-align: center;
+	list-style: none;
+}
+body a{
+	text-decoration: none;
+	color: rgba(240,240,240,0.7);
+}
+
+/*||||||||||||||TELAS|||||||||||||||*/
+
+.telaLogin{
+	/*display: none;*/
+}
+.telaCadastro{
+	display: none;
+}
+.telaTarefas{
+	display: none;
+}
+
+
+/*||||||||||||||GENERAL|||||||||||||||*/
+
+input{
+	width: 75vw;
+	height: 7vh;
+	margin: 5vw;
+	font-size: 90%;
+	border: rgba(0,0,0,0.5) 0.5vw solid;
+	border-radius: 3vw;
+	padding-left: 5vw;
+}
+img{
+	background: white;
+	margin: 10vw 0 10vw 0;
+	padding: 5vw;
+	width: 25vw;
+	border: rgba(0,0,0,0.7) 1vw solid;
+	border-radius: 10vw;
+}
+button{
+	font-size: 120%;
+	color: rgba(0,0,0,0.7);
+	width: 80vw;
+	height: 8vh;
+	margin: 5vw 0 8vw 0;
+	background: white;
+	border: rgba(0,0,0,0.5) 0.5vw solid;
+	border-radius: 3vw;
+}
+h2{
+	font-size: 150%;
+	padding: 5vh;
+}
+
+/*||||||||||||||TELA-LOGIN|||||||||||||||*/
+
+/*||||||||||||||TELA-CADASTRO|||||||||||||||*/
+
+.cadastro{
+	color: rgba(50,50,50,0.8);
+	margin-top: 2vh;
+}
+.erro{
+	position: absolute;
+}
+.mensagem{
+	font-size: 150%;
+	position: absolute;
+	display: none;
+	width: 50vw;
+	height: 30vh;
+	right: 25vw;
+	left: 25vw;
+	top: 35vh;
+	bottom: 35vh;
+	background: rgba(252,252,252,0.9);
+	border-radius: 2vw;
+	border: rgba(0,0,0,0.5) solid 0.1vw;
+
+}
+
+/*||||||||||||||TELA-TAREFAS|||||||||||||||*/
+
+.loading{
+	border: none;
+	border-radius: 0;
+	position: absolute;
+	left: 30vw;
+	right: 30vw;
+	bottom: 35vh;
+	top: 35vh;
+}
+
+.adicionarBotao{
+	width: 15vw;
+	font-size: 150%;
+	border-radius: 0;
+}
+.voltar{
+	border-radius: 5vw;
+	font-size: 75%;
+	position: fixed;
+	right: 70vw;
+	left: 10vw;
+	bottom: 0;
+	width: 20vw;
+}
+.telaTarefas{
+	font-style: none;
+}
+.telaTarefas input{
+	color: rgba(0,0,0,0.7);
+	width: 80vw;
+	height: 6vh;
+	margin: 3vw 0 3vw 0;
+	background: white;
+	border: rgba(0,0,0,0.5) 0.5vw solid;
+	line-height: 6vh;
+}
+.telaTarefas li{
+	color: rgba(0,0,0,0.7);
+	width: 80vw;
+	height: 6vh;
+	margin: 3vw 10vw 3vw 10vw;
+	border-radius: 2vw;
+	background: white;
+	border: rgba(0,0,0,0.5) 0.5vw solid;
+	line-height: 6vh;
+	position: relative;
+}

@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Default</title>
-    <meta name="description" content="A template">
-    <meta name="keywords" content="Template">
-    <meta name="author" content="Luiz Gustavo Piovezani">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <title>iTasks</title>
+  <link rel="shortcut icon" href="../res/book.png" />
+  <meta name="description" content="APP">
+  <meta name="keywords" content="Tasks">
+  <meta name="author" content="Luiz Gustavo Piovezani">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+<!-- |||||||||||||Tela-Login||||||||||||| -->
+
+<section class="telaLogin">
+  <img src="img/book.svg">
+  <form>
+    <input type="text" name="email" placeholder="Email" class="email">
+    <input type="password" name="senha" placeholder="Senha" class="senha">
+    <button class="Btnlogin">Enviar</button>
+    <div class="mensagem">Login ou Senha incorreta! Tente novamente.</div>
+  </form>
+  <p>Não possui cadastro?</p>
+  <p class="cadastro">Cadastre-se agora!</p>
+</section>
+
+<!-- |||||||||||||Tela-Cadastro||||||||||||| -->
+
+<section class="telaCadastro">
+  <h2>CADASTRE-SE</h2>
+  <form>
+    <input type="text" name="nome" placeholder="Nome" id="nome">
+    <input type="text" name="email" placeholder="Email" id="email">
+    <input type="password" name="senhaCadastro" placeholder="Senha" class="senhaCadastro" id="senha">
+    <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" class="confirmarSenha" id="confirmarSenha">
+    <button>Enviar</button>
+  </form>
+</section>
+
+<!-- |||||||||||||Tela-Tarefas||||||||||||| -->
+
+<section class="telaTarefas">
+  <h2>TAREFAS</h2>
+    <p class="loading"></p>
+  <div class="camposInput">
+    <input type="text" name="inputTarefas" class="inputTarefas">
+    <button class="adicionarBotao">+</button>
+      <ul>
+      </ul>
+  </div>
+  <button class="voltar">Voltar</button>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/easy.js"></script>
+<script src="js/embaralhar-itens.js"></script>
+<script src="js/jquerytouchswipe.js"></script>
+<script>
+</script>
 </body>
 </html>
