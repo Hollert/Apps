@@ -22,7 +22,7 @@ body a{
 /*||||||||||||||TELAS|||||||||||||||*/
 
 .telaLogin{
-	/*display: none;*/
+	/* display: none; */
 }
 .telaCadastro{
 	display: none;
@@ -70,7 +70,7 @@ h2{
 
 /*||||||||||||||TELA-CADASTRO|||||||||||||||*/
 
-.cadastro{
+.btnCadastro{
 	color: rgba(50,50,50,0.8);
 	margin-top: 2vh;
 }
@@ -110,7 +110,7 @@ h2{
 	font-size: 150%;
 	border-radius: 0;
 }
-.voltar{
+.btnVoltar{
 	border-radius: 5vw;
 	font-size: 75%;
 	position: fixed;

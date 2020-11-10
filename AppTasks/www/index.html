@@ -21,11 +21,11 @@
   <form>
     <input type="text" name="email" placeholder="Email" class="email">
     <input type="password" name="senha" placeholder="Senha" class="senha">
-    <button class="Btnlogin">Enviar</button>
+    <button class="btnLogin">Enviar</button>
     <div class="mensagem">Login ou Senha incorreta! Tente novamente.</div>
   </form>
   <p>Não possui cadastro?</p>
-  <p class="cadastro">Cadastre-se agora!</p>
+  <p class="btnCadastro">Cadastre-se agora!</p>
 </section>
 
 <!-- |||||||||||||Tela-Cadastro||||||||||||| -->
@@ -37,7 +37,7 @@
     <input type="text" name="email" placeholder="Email" id="email">
     <input type="password" name="senhaCadastro" placeholder="Senha" class="senhaCadastro" id="senha">
     <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" class="confirmarSenha" id="confirmarSenha">
-    <button>Enviar</button>
+    <button class="btnEnviar">Enviar</button>
   </form>
 </section>
 
@@ -52,18 +52,34 @@
       <ul>
       </ul>
   </div>
-  <button class="voltar">Voltar</button>
+  <button class="btnVoltar">Voltar</button>
 </section>
+
+<!-- |||||||||||||Scripts||||||||||||| -->
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/easy.js"></script>
-<script src="js/embaralhar-itens.js"></script>
 <script src="js/jquerytouchswipe.js"></script>
 <script>
 
-
-$(".Btnlogin").on("click",function(){
+$(".btnLogin").on("click",function(){
     return verificarCadastro();
+});
+
+$(".btnVoltar").on("click",function(){
+    $(".telaLogin").show();
+    $(".telaTarefas").hide();
+});
+
+$(".btnEnviar").on("click",function(){
+    $(".telaLogin").show();
+    $(".telaCadastro").hide();
+});
+
+$(".btnCadastro").on("click",function(){
+    $(".telaLogin").hide();
+    $(".telaCadastro").show();
 });
 
 function verificarCadastro(){
