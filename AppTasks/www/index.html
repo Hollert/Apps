@@ -87,6 +87,20 @@ function verificarCadastro(){
     $(".telaTarefas").show();
     return false;
 }
+
+//////////////////VALIDAÇÃO-DE-CADASTRO/////////////////
+
+$(".confirmarSenha").on("blur",function(){
+    if($(".confirmarSenha").val() == $(".senhaCadastro").val()){
+        $(".confirmarSenha").css({"border-color":"green"});
+        $(".senhaCadastro").css({"border-color":"green"});
+    }else{
+        alert("Senhas não condizem");
+        $(".confirmarSenha").css({"border-color":"red"});
+        $(".senhaCadastro").css({"border-color":"red"});
+    }
+});
+
 </script>
 </body>
 </html>
